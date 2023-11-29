@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(149, 242, 223);
+    padding: 0;
+    margin: 0;
+}
+.container1{
+    width: 700px;
+    height: 180px;
+    margin: 100px auto;
+    background-color: rgb(240, 255, 252);
+    position: relative;
+    text-align: center;
+}
+h1 {
+
+    color: #007BFF;
+    font-size: 30px;
+    margin: 20px;
+    
+}
+
+p {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin: 10px;
+}
+.img{
+    margin-left: 27.5%;
+}

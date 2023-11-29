@@ -1,0 +1,95 @@
+/* Reset default styles and set a base font size */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Arrange the boxes as you described */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.box1, .box3 {
+    flex: 0 0 25%; /* Box1 and Box3 take up 25% of the container width */
+    padding: 20px;
+}
+
+.box2 {
+    flex: 1; /* Box2 takes up remaining space */
+    text-align: center;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #007BFF;
+    font-size: 28px;
+    margin: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    margin-top: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Change the direction to column for smaller screens */
+        align-items: stretch;
+    }
+
+    .box1, .box3 {
+        flex: 1; /* Both boxes take up full width */
+    }
+
+    .box2 {
+        max-width: 100%; /* Adjust the width to fit the screen */
+        margin: 20px 0;
+    }
+}
+
+/* Add styling for the images */
+img {
+    max-width: 110%;
+    height: auto;
+}
