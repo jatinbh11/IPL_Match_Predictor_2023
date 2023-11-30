@@ -9,3 +9,4 @@ scikit-learn
 scipy
 tzdata
 Werkzeug
+gunicorn
