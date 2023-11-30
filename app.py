@@ -64,6 +64,3 @@ def predict():
                                bowling_team=bowling_team, loss=round(loss * 100))
     except Exception as e:
         return render_template('error.html', error_message=str(e))
-
-if __name__ == '__main__':
-  app.run(host="0.0.0.0", port='8000', debug = True)
