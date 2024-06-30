@@ -48,14 +48,14 @@
         <label for="score">Score:</label>
         <input type="number" name="score" id="score" required>
         <br>
-
         <label for="overs">Overs Completed:</label>
-        <input type="number" name="overs" id="overs" required>
+        <input type="number" name="overs" id="overs" required min="0" max="20">
         <br>
-
+        
         <label for="wickets_out">Wickets Out:</label>
-        <input type="number" name="wickets_out" id="wickets_out" required>
+        <input type="number" name="wickets_out" id="wickets_out" required min="0" max="10">
         <br>
+        
 
         <input type="submit" value="Predict Probability">
     </form>
